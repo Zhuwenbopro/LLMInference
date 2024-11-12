@@ -1,4 +1,5 @@
 ## cuBLAS_vs_kernel_MatrixMul.cu
+GPU如果能用上tensor core效果还是非常惊艳的
 ```
 zeke@zeke:~/cuda_$ nvcc -lcublas -o cuBLAS_vs_kernel_MatrixMul cuBLAS_vs_kernel_MatrixMul.cu
 zeke@zeke:~/cuda_$ ./test
