@@ -1,5 +1,6 @@
+# cuBLAS_vs_kernel_MatrixMul.cu
 ```
-zeke@zeke:~/cuda_$ nvcc -lcublas -o test test.cu
+zeke@zeke:~/cuda_$ nvcc -lcublas -o cuBLAS_vs_kernel_MatrixMul cuBLAS_vs_kernel_MatrixMul.cu
 zeke@zeke:~/cuda_$ ./test
 自定义核函数运行时间: 121.376 ms
 cuBLAS（Tensor Core）运行时间: 13.3429 ms
