@@ -21,11 +21,15 @@ zeke@zeke:~/cuda_$ ./test
 运行时间: 11.2326 ms
 结果正确！
 ```
-## silu_fp16_vs_silu_fp32.cu
-fp16 进行运算的速度快是因为内存传输少。
+
+## silu_fp16_bf16_vs_fp32.cu
+fp16、bf16 进行运算的速度快是因为内存传输少。
 ```
+zeke@zeke:~/cuda_$ nvcc -lcublas -o test test.cu
 zeke@zeke:~/cuda_$ ./test
-FP32 kernel execution time: 2.08387 ms
+FP32 kernel execution time: 2.3976 ms
 FP16 kernel execution time: 0.31232 ms
-Results are correct within acceptable error margin.
+BF16 kernel execution time: 0.308224 ms
+FP16 results are correct within acceptable error margin.
+BF16 results are correct within acceptable error margin.
 ```
